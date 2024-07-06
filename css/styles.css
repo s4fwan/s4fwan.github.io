@@ -23,7 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .typing-effect {
@@ -85,7 +85,15 @@ body {
 }
 
 @media (min-width: 1200px) {
+  .typing-effect-container {
+    margin-bottom: 50px;
+  }
+
   .typing-effect {
+    font-size: 4rem;
+  }
+
+  .blinking-effect {
     font-size: 4rem;
   }
 
@@ -101,7 +109,15 @@ body {
 }
 
 @media (max-width: 300px) {
+  .typing-effect-container {
+    margin-bottom: 25px;
+  }
+
   .typing-effect {
+    font-size: 1rem;
+  }
+
+  .blinking-effect {
     font-size: 1rem;
   }
 
