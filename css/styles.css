@@ -23,7 +23,6 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 30px;
 }
 
 .typing-effect {
@@ -65,7 +64,7 @@ body {
 .icons {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: calc(1.5rem + 2vw);
 }
 
 .icons a {
@@ -74,8 +73,8 @@ body {
 }
 
 .icons svg {
-  width: 30px;
-  height: 30px;
+  width: calc(0.75rem + 2vw);
+  height: calc(0.75rem + 2vw);
   fill: #b6b1f5;
   transition: fill 0.3s ease;
 }
@@ -85,16 +84,16 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .typing-effect-container {
-    margin-bottom: 50px;
-  }
-
   .typing-effect {
     font-size: 4rem;
   }
 
   .blinking-effect {
     font-size: 4rem;
+  }
+
+  .icons {
+    margin-top: 60px;
   }
 
   .icons a {
@@ -109,10 +108,6 @@ body {
 }
 
 @media (max-width: 300px) {
-  .typing-effect-container {
-    margin-bottom: 25px;
-  }
-
   .typing-effect {
     font-size: 1rem;
   }
@@ -122,7 +117,7 @@ body {
   }
 
   .icons {
-    margin-top: 0px;
+    margin-top: 10px;
   }
 
   .icons a {
@@ -130,7 +125,7 @@ body {
   }
 
   .icons svg {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
   }
 }
