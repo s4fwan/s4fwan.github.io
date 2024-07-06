@@ -1,0 +1,120 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  background-color: #121212;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.typing-effect-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.typing-effect {
+  position: absolute;
+  font-size: calc(1.5rem + 2vw);
+  color: #e0e0e0;
+  border-right: 0.05em solid #ffffff; /* The typewriter cursor */
+  padding-right: 0.1em; /* Add space between text and border */
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.blinking-effect {
+  position: absolute;
+  font-size: calc(1.5rem + 2vw);
+  color: #ffffff;
+  border-right: 0.05em solid #ffffff; /* The typewriter cursor */
+  padding-right: 0.1em; /* Add space between text and border */
+  overflow: hidden;
+  white-space: nowrap;
+  visibility: visible;
+}
+
+.blink-caret {
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #ffffff;
+  }
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.icons a {
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.icons svg {
+  width: 30px;
+  height: 30px;
+  fill: #e0e0e0;
+  transition: fill 0.3s ease;
+}
+
+.icons a:hover svg {
+  fill: #0077b5;
+}
+
+@media (min-width: 1200px) {
+  .typing-effect {
+    font-size: 4rem;
+  }
+
+  .icons a {
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  .icons svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 300px) {
+  .typing-effect {
+    font-size: 1rem;
+  }
+
+  .icons {
+    margin-top: 0px;
+  }
+
+  .icons a {
+    margin: 0 2px;
+  }
+
+  .icons svg {
+    width: 20px;
+    height: 20px;
+  }
+}
