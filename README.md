@@ -4,6 +4,6 @@ My simple dev portfolio website.
 
 https://s4fwan.dev/
 
-## Libraires
+## Libraries
 
 - [particles.js](https://github.com/VincentGarreau/particles.js)
