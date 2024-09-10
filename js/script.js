@@ -19,8 +19,24 @@ function typeEffect() {
   }
 }
 
-particlesJS.load("particles-js", "config/particles.json", function () {
-  console.log("callback - particles.js config loaded");
-});
+function loadParticleConfig() {
+  const width = window.innerWidth;
 
-window.onload = blinkEffect;
+  let configPath = "config/particles-default.json";
+
+  if (width >= 1200) {
+    configPath = "config/particles-desktop.json";
+  } else if (width <= 300) {
+    configPath = "config/particles-mobile.json";
+  } 
+
+  particlesJS.load("particles-js", configPath, function () {
+    console.log("callback - particles.js config loaded");
+  });
+}
+
+window.addEventListener("resize", loadParticleConfig);
+
+window.addEventListener('load', blinkEffect);
+
+window.addEventListener('load', loadParticleConfig);
