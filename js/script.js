@@ -2,7 +2,7 @@ const text = "Safwan Abrar (s4fwan)";
 let index = 0;
 
 function blinkEffect() {
-  document.getElementById("blinkingEffect").innerHTML += "&#8205";
+  document.getElementById("blinkingEffect").innerHTML += "\u2005";
   document.getElementById("blinkingEffect").classList.add("blink-caret");
   setTimeout(typeEffect, 2000);
 }
