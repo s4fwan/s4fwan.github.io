@@ -1,0 +1,49 @@
+# --- Text files: Normalize line endings to LF and mark as text
+*.html     text eol=lf
+*.css      text eol=lf
+*.js       text eol=lf
+*.ts       text eol=lf
+*.json     text eol=lf
+*.md       text eol=lf
+*.yml      text eol=lf
+*.yaml     text eol=lf
+*.xml      text eol=lf
+*.svg      text eol=lf
+*.txt      text eol=lf
+*.sh       text eol=lf
+*.env      text eol=lf
+
+# --- Treat all files not listed as binary by default (fallback)
+*          text=auto
+
+# --- Binary files: Don't modify or diff
+*.png      binary
+*.jpg      binary
+*.jpeg     binary
+*.gif      binary
+*.webp     binary
+*.ico      binary
+*.pdf      binary
+*.mp4      binary
+*.mp3      binary
+*.woff     binary
+*.woff2    binary
+*.ttf      binary
+*.eot      binary
+*.otf      binary
+*.zip      binary
+*.gz       binary
+*.tar      binary
+*.7z       binary
+*.exe      binary
+*.dll      binary
+
+# --- Optional: Keep newline at end of files
+*.js       text eol=lf eof=lf
+*.css      text eol=lf eof=lf
+*.html     text eol=lf eof=lf
+
+# --- Optional: Lock config files to LF only
+.gitattributes   text eol=lf
+.editorconfig    text eol=lf
+.gitignore       text eol=lf
